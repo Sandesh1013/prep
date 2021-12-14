@@ -3,22 +3,29 @@ import {View,Text,StyleSheet,FlatList} from 'react-native';
 
 const ListScreen=()=>{
     const friends=[
-        {name:'Friend 1'},
         {name:'Friend 2'},
         {name:'Friend 3'},
         {name:'Friend 4'},
-        {name:'Friend 5'},
+        {name:'Friend 6'},
     ]
     return (
-        <FlatList 
+        <FlatList
+            horizontal
+            showsHorizontalScrollIndicator
+            keyExtractor={(friend)=>friend.name} 
+            //Better way
             data={friends}
             renderItem={({item})=>{
-                return <Text>{item.name}</Text>;
+                return <Text style={styles.textStyle}>{item.name}</Text>;
             }}
         />
-    );
+    ); 
 };
 
-const style=StyleSheet.create({});
+const styles=StyleSheet.create({
+    textStyle:{
+        marginVertical:50
+    },
+});
 
 export default ListScreen;
