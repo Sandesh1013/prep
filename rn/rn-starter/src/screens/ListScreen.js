@@ -21,7 +21,7 @@ const ListScreen=()=>{
         />
     ); 
 };
-
+//buttons now
 const styles=StyleSheet.create({
     textStyle:{
         marginVertical:50
