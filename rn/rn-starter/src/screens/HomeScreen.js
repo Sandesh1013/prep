@@ -12,6 +12,9 @@ const HomeScreen = (props) => {
     <Button 
       onPress={()=>props.navigation.navigate('Image')} 
       title='To Images'/>
+    <Button 
+      onPress={()=>props.navigation.navigate('Counter')} 
+      title='To Counter'/>
     </View>
 };
 //Self closing button
