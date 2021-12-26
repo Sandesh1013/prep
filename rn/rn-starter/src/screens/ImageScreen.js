@@ -4,10 +4,10 @@ import ImageDetail from '../components/ImageDetail';
 
 const ImageScreen=()=>{
     return <View>
-        <ImageDetail/>
-        <ImageDetail/>
-        <ImageDetail/>
-        <ImageDetail/>
+        <ImageDetail title="Forest" src={require('../../assets/adaptive-icon.png')}/>
+        <ImageDetail title="Beach" src={require('../../assets/adaptive-icon.png')}/>
+        <ImageDetail title="Mountain" src={require('../../assets/adaptive-icon.png')}/>
+
     </View>
 }
 
